@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import image from "./logo-org.png";
 
 function App() {
-  const [date, setDate] = useState(new Date());
+  const date = new Date();
   const [hour, setHour] = useState(date.getHours() % 12 || 12);
   const [min, setMinutes] = useState(date.getMinutes());
   const [sec, setSec] = useState(date.getSeconds());
@@ -30,7 +30,7 @@ function App() {
             Show operator your ticket
           </p>
         </div>
-        <span className="close">XX</span>
+        <span className="close">X</span>
       </div>
       <div className="body">
         <div style={{ height: "250px" }}>
