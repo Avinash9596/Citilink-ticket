@@ -30,7 +30,7 @@ function App() {
             Show operator your ticket
           </p>
         </div>
-        <span className="close">X</span>
+        <span className="close">XX</span>
       </div>
       <div className="body">
         <div style={{ height: "250px" }}>
