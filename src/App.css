@@ -36,7 +36,7 @@
   font-size: 14px;
 }
 
-@keyframes zoom-in-zoom-out {
+/* @keyframes zoom-in-zoom-out {
   0% {
     border-width: 20px;
   }
@@ -60,7 +60,7 @@
   content: blue;
   height: 120px;
   border-radius: 50%;
-  /* text-align: center; */
+   text-align: center;
   margin: 0px auto;
 }
 .logo > img {
@@ -68,7 +68,7 @@
   top: 42%;
   width: 86px;
   left: 15%;
-}
+} */
 
 .expiry {
   font-weight: 800;
@@ -87,4 +87,84 @@
 .header {
   display: flex;
   justify-content: center;
+}
+/* -------------------------------------- */
+
+.port {
+  position: relative;
+  width: 330px;
+  height: 330px;
+  margin: 100px;
+  color: #000;
+  margin: 0px auto;
+}
+
+.port_animation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #1f1f64;
+  color: #000;
+  border-radius: 50%;
+  animation: zoom-in-out 2.5s ease-out infinite;
+  /* 	border: 15px dashed #FFFFFF; */
+  /* box-shadow: 0 0 50px #000; */
+  /* -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: infinite;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 30s;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: zoom-in-out;
+  -moz-animation-duration: 30s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear; */
+}
+
+@keyframes zoom-in-out {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    transform: scale(0.5, 0.5);
+  }
+}
+
+/* @-moz-keyframes zoom-in-out {
+  from {
+    -moz-transform: scale(0.5, 0.5);
+  }
+  to {
+    -moz-transform: scale(1.5, 1.5);
+  }
+} */
+
+.rounded {
+  top: 30%;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  margin: 0px auto;
+  left: 30%;
+  background: white;
+}
+
+img {
+  top: 40%;
+  left: 13%;
+  position: relative;
+  /* border: 1px solid black;
+  border-radius: 50%; */
+  /* height: 80px;
+  width: 80px; */
 }

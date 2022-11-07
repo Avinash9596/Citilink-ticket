@@ -33,14 +33,21 @@ function App() {
         <span className="close">X</span>
       </div>
       <div className="body">
-        <div style={{ height: "250px" }}>
+        {/* <div style={{ height: "250px" }}>
           <div className="logo">
             <img src={image} width="100" alt="CitiLink-Logo" />
+          </div>
+        </div> */}
+
+        <div className="port">
+          <div className="port_animation"></div>
+          <div className="rounded">
+            <img width="100" src={image} alt="Citilink logo" />
           </div>
         </div>
 
         <h1 className="time">
-          {hour}:{min < 9 ? "0" + min : min}:{sec < 9 ? "0" + sec : sec} {day}
+          {hour}:{min < 9 ? "0" + min : min}:{sec < 10 ? "0" + sec : sec} {day}
         </h1>
         <div className="card">
           <h2 className="ticketType">Regular Ticket-to-Ride</h2>
